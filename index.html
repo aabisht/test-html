@@ -37,7 +37,7 @@
 			console.log("button clicked");
 			var initialMetaValue = document.querySelectorAll('head meta[name=viewport]')[0];
 			document.querySelectorAll('head')[0].removeChild(document.querySelectorAll('head meta[name=viewport]')[0]);
-			document.querySelectorAll('head')[0].innerHTML += '<meta name="viewport" content="user-scalable=0" />';
+			document.querySelectorAll('head')[0].innerHTML += '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />';
 			document.querySelectorAll('head')[0].removeChild(document.querySelectorAll('head meta[name=viewport]')[0]);
 			document.querySelectorAll('head')[0].appendChild(initialMetaValue);
 		});
